@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head><title>All about Forms</title></head>
+    <script type="text/javascript" src="dom.js"></script>
+    <body>
+    <form method="GET">
+    <fieldset>
+        <legend>Username & Password</legend>
+    <p>Username:
+    <input type="text" name="Name" maxlength="30" size="20" required="required"/>
+    </p>
+    <p>Password:
+        <input type="password"name="Password" maxlength="30" size="20"/>
+    </p>
+    </fieldset>
+
+    <p>Input your Text</p>
+    <textarea name="Textarea">
+        This is the Textarea. You can type anything here.
+    </textarea>
+
+    <p>
+    <input type="radio" name="RadioButton" value="Naing" checked="checked"/>Naing
+    <input type="radio" name="RadioButton" value="Ye"/>Ye
+    <input type="radio" name="RadioButton" value="Khant"/>Khant
+    </p>
+
+    <p>
+        <input type="checkbox" name="CheckBox" value="Naing" checked="checked"/>Naing
+        <input type="checkbox" name="CheckBox" value="Ye"/>Ye
+        <input type="checkbox" name="CheckBox" value="Khant"/>Khant
+    </p>
+
+    <p>Choose my name:
+        <select name="DropDown">
+            <option value="Naing">Naing</option>
+            <option value="Ye">Ye</option>
+            <option value="Khant">Khant</option>
+            <option value="Mya">Mya</option>
+            <option value="Pwint">Pwint</option>
+            <option value="Khaing">Khaing</option>
+        </select>
+    </p>
+    </form>
+
+
+<form method="POST">
+    <input type="file" name="Files"/>
+    <br/>
+    <input type="submit" value="Upload"/>
+    <br/>
+    <input type="image" src="../Images/upload.jpg" width="150px" height="100px"/>
+    <br/>
+    <button><img src="../Images/NextBtn.png"  width="50px" height="50px"/>Add</button>
+    <br/>
+    <input type="date"/>
+    <br/>
+    <input type="email"/>
+    <br/>
+    <input type="url"/>
+    <br/>
+    <input type="search" placeholder="Your Best Search Engine"/>
+</form>
+</body>
+</html>
